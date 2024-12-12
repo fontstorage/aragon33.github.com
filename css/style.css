@@ -1,0 +1,338 @@
+  :root {
+      --theme-color: #00a98f;
+      --title-color: #051b35;
+      --text-color: #333333;
+  }
+
+  /* reset code */
+  html {
+      scroll-behavior: smooth;
+  }
+
+  body,
+  html {
+      margin: 0;
+      padding: 0;
+      color: #585858;
+  }
+
+  * {
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  }
+
+  .wrapper {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+  @media (min-width: 576px) {
+      .wrapper {
+          max-width: 540px;
+      }
+  }
+
+  @media (min-width: 768px) {
+      .wrapper {
+          max-width: 720px;
+      }
+  }
+
+  @media (min-width: 992px) {
+      .wrapper {
+          max-width: 960px;
+      }
+  }
+
+  @media (min-width: 1200px) {
+      .wrapper {
+          max-width: 1140px;
+      }
+  }
+
+  .d-grid {
+      display: grid;
+  }
+
+  .d-flex {
+      display: flex;
+      display: -webkit-flex;
+      flex-wrap: wrap;
+  }
+
+  .text-center {
+      text-align: center;
+  }
+
+  .text-left {
+      text-align: left;
+  }
+
+  .text-right {
+      text-align: right;
+  }
+
+  button,
+  input,
+  select {
+      -webkit-appearance: none;
+      outline: none;
+  }
+
+  button,
+  .btn,
+  select {
+      cursor: pointer;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol {
+      margin: 0;
+      padding: 0;
+  }
+
+  h1 {
+
+      font-size: 50px;
+      text-align: center;
+      color: #fff;
+      margin-top: 30px;
+  }
+
+  /*-- main --*/
+  .mainw3.form {
+      background: url(../images/bg.jpg) no-repeat center;
+      background-attachment: fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      min-height: 100vh;
+      display: grid;
+      align-items: center;
+      padding: 2rem 0;
+      position: relative;
+      z-index: 0;
+  }
+
+  .mainw3.form:before {
+      content: "";
+      background: rgba(0, 0, 0, 0.72);
+      position: absolute;
+      top: 0;
+      min-height: 100%;
+      left: 0;
+      right: 0;
+      z-index: -1;
+  }
+
+  .subscribe-w3lsbottom h2 {
+      text-align: center;
+      font-size: 140px;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 16px 0 31px;
+      position: relative;
+  }
+
+  p.page-mk {
+      color: #fff;
+      width: 100%;
+      margin: 0 auto;
+      font-size: 28px;
+      text-align: center;
+      opacity: 0.4;
+      z-index: 0;
+  }
+
+  .subscribe h6 {
+      font-size: 18px;
+      color: #fff;
+      margin-top: 30px;
+      font-weight: normal;
+  }
+
+  .w3l-page {
+      color: #ffffff;
+      font-size: 70px;
+      font-style: italic;
+      font-weight: bold;
+      opacity: 0.6;
+      text-align: center;
+  }
+
+  a.play-icon.popup-with-zoom-anim {
+      color: #fff;
+      background: transparent;
+      min-width: 130px;
+      cursor: pointer;
+      line-height: 30px;
+      text-decoration: none;
+      -webkit-appearance: none;
+      display: inline-block;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      text-align: center;
+      padding: 8px 15px;
+      border-radius: 4px;
+      transition: 0.3s ease;
+      border: 1px solid var(--theme-color);
+      margin-top: 70px;
+  }
+
+  a.play-icon.popup-with-zoom-anim:hover {
+      background: var(--theme-color);
+      color: #fff;
+  }
+
+  .theme-button {
+      min-width: 130px;
+      cursor: pointer;
+      text-decoration: none;
+      -webkit-appearance: none;
+      display: inline-block;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      text-align: center;
+      color: #000000;
+      background: #f5f5f5;
+      padding: 14px 18px;
+      border-radius: 4px;
+      transition: 0.3s ease;
+      border: 1px solid var(--theme-color);
+  }
+
+  .theme-button:hover {
+      background: var(--theme-color);
+      color: #fff;
+  }
+
+  /* placeholder */
+  ::-webkit-input-placeholder {
+      color: #999 !important;
+  }
+
+  :-moz-placeholder {
+      /* Firefox 18- */
+      color: #999 !important;
+  }
+
+  ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #999 !important;
+  }
+
+  :-ms-input-placeholder {
+      color: #999 !important;
+  }
+
+  /* //placeholder */
+  /* pop up */
+  .pop-overlay {
+      position: fixed;
+      top: 0px;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 0ms;
+      visibility: hidden;
+      opacity: 0;
+      z-index: 99;
+      overflow-y: scroll;
+      max-height: 100vh;
+      height: 100vh;
+  }
+
+  .pop-overlay::-webkit-scrollbar {
+      width: 4px;
+  }
+
+  .pop-overlay::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px #ffffff;
+      border-radius: 5px;
+  }
+
+  .pop-overlay::-webkit-scrollbar-thumb {
+      background: rgba(82, 82, 82, 0.4);
+  }
+
+  .pop-overlay:target {
+      visibility: visible;
+      opacity: 1;
+  }
+
+  .popup {
+      background: #fff;
+      border-radius: 3px;
+      max-width: 350px;
+      position: relative;
+      margin: 16rem auto 0;
+      padding: 2rem 1rem 1.5rem;
+  }
+
+  .popup h4 {
+      font-size: 25px;
+      line-height: 32px;
+      color: #051B35;
+      margin-bottom: 15px;
+  }
+
+  .popup p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 25px;
+      color: #34334e;
+      margin-bottom: 25px;
+  }
+
+  .popup .close {
+      position: absolute;
+      top: 5px;
+      right: 15px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #000;
+      opacity: 0.6;
+  }
+
+  .popup .close:hover {
+      opacity: 1;
+  }
+
+  .info {
+      margin-bottom: 40px;
+  }
+
+  .main.vlcone h3 {
+      color: #000;
+      font-size: 30px;
+  }
+
+  /* Icons */
+
+  .img-wechat {
+      text-align: center;
+      margin: 1em 0 0.5em;
+  }
+
+  /*--//responsive--*/
